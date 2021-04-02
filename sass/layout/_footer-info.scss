@@ -1,0 +1,27 @@
+.address {
+  font-style: normal;
+}
+
+.info-address-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color-white);
+}
+
+.info-list {
+  margin-top: 20px;
+}
+
+.info-list-link {
+  color: var(--text-color-white);
+
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--text-color-transparent);
+}
+
+.info-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
