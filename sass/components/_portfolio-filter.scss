@@ -12,8 +12,10 @@
   transition-timing-function: var(--timimg-function);
 }
 
-.filter-btn:not(:last-child) {
-  margin-right: 8px;
+.filter-btn {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .nav-btn {

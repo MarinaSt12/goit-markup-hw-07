@@ -42,10 +42,10 @@
 
   fill: var(--text-color-darkgrey);
   transition: fill 250ms var(--timimg-function);
-}
 
-.modal-form-input:focus + .modal-form-icon {
-  fill: var(--accent-color);
+    .modal-form-input:focus + & {
+      fill: var(--accent-color);
+    }
 }
 
 .modal-form-field-comment {
@@ -99,25 +99,24 @@
       border-radius: 2px;
       margin-right: 8px;
       transition: background-color 250ms var(--timimg-function);
-    }
 
-    .modal-form-term:checked + &::before {
-      background-image: url('../images/check-vector.svg');
-      background-position: center;
-      fill: var(--text-color-white);
-      background-repeat: no-repeat;
-      background-color: var(--accent-color);
-      background-size: 100%;
-      border: none;
+        .modal-form-term:checked + & {
+          background-image: url('../images/check-vector.svg');
+          background-position: center;
+          fill: var(--text-color-white);
+          background-repeat: no-repeat;
+          background-color: var(--accent-color);
+          background-size: 100%;
+          border: none;
+          // -webkit-appearance: none;
+          // -moz-appearance: none;
+          // appearance: none;
+        }
 
-      // -webkit-appearance: none;
-      // -moz-appearance: none;
-      // appearance: none;
-    }
-
-    .modal-form-term:focus + &::before {
-      box-shadow: 0 0 0 1px var(--accent-color);
-      border: none;
+        .modal-form-term:focus + &{
+          box-shadow: 0 0 0 1px var(--accent-color);
+          border: none;
+        }
     }
 }
 

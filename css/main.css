@@ -168,16 +168,16 @@ button {
   align-items: center;
 }
 
-.navigation-list {
+.menu {
   display: flex;
   align-items: center;
 }
 
-.navigation-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.navigation-link {
+.menu__link {
   position: relative;
   display: block;
   padding-top: 32px;
@@ -191,15 +191,14 @@ button {
   transition-duration: 250ms;
   transition-timing-function: var(--timimg-function);
 }
-.navigation-link:hover, .navigation-link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
 }
 
-.navigation-link.current {
+.menu__link.current {
   color: var(--accent-color);
 }
-
-.navigation-link.current::after {
+.menu__link.current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -231,17 +230,17 @@ button {
   color: var(--text-color-white);
 }
 
-.contacts-list {
+.contact-list {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-.contacts-item:not(:last-child) {
+.contact-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contacts-item a {
+.contact-list__item a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -254,11 +253,10 @@ button {
   letter-spacing: 0.02em;
 }
 
-.contacts-link {
+.contact-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* display: block; */
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--text-color-grey);
@@ -270,18 +268,18 @@ button {
   transition-duration: 250ms;
   transition-timing-function: var(--timimg-function);
 }
-.contacts-link:focus, .contacts-link:hover {
+.contact-list__link:focus, .contact-list__link:hover {
   color: var(--accent-color);
 }
 
-.contacts-icon {
+.contact-list__icon {
   fill: var(--text-color-grey);
   margin-right: 10px;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: var(--timimg-function);
 }
-.contacts-link:hover .contacts-icon, .contacts-link:focus .contacts-icon {
+.contact-list__link:hover .contact-list__icon, .contact-list__link:focus .contact-list__icon {
   fill: var(--accent-color);
 }
 
@@ -398,7 +396,6 @@ button {
   fill: var(--text-color-darkgrey);
   transition: fill 250ms var(--timimg-function);
 }
-
 .modal-form-input:focus + .modal-form-icon {
   fill: var(--accent-color);
 }
@@ -539,19 +536,19 @@ button {
   padding-top: var(--section-pt);
 }
 
-.advantages-list {
+.advantages__list {
   display: flex;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.advantages-list-item {
+.advantages__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.advantages-title {
+.advantages__title {
   margin-bottom: 10px;
   color: var(--text-color-darkgrey);
   font-weight: 700;
@@ -561,13 +558,13 @@ button {
   text-transform: uppercase;
 }
 
-.advantages-description {
+.advantages__description {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.advantages-item-icon {
+.advantages__iconbox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -583,20 +580,20 @@ button {
   padding-bottom: var(--section-pb);
 }
 
-.services-list {
+.services__list {
   display: flex;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.services-list-item {
+.services__item {
   position: relative;
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.services-img-title {
+.services__title {
   position: absolute;
   bottom: 0;
   right: 0;
