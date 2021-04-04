@@ -1,10 +1,10 @@
-.footer-newsletter {
+.newsletter {
   margin-left: 93px;
   width: 570;
   min-width: 570px;
 }
 
-.footer-newsletter-title {
+.newsletter__title {
   color: var(--text-color-white);
 
   font-weight: 700;
@@ -14,13 +14,13 @@
   text-transform: uppercase;
 }
 
-.footer-newsletter-form {
+.newsletter-form {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.newsletter-email-form {
+.newsletter-form__input {
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -45,7 +45,7 @@
     }
 }
 
-.newsletter-btn-submit {
+.newsletter-btn {
   display: flex;
 
   width: 200px;
@@ -73,13 +73,13 @@
     }
 }
 
-.newsletter-btn-text {
+.newsletter-btn__text {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
 }
 
-.newsletter-icon {
+.newsletter-btn__icon {
   fill: var(--text-color-white);
   margin-left: 10px;
 }

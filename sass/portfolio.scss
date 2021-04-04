@@ -4,14 +4,14 @@
 @import './base/common';
 @import "./base/container";
 
-@import "./components/navigation";
+@import "./components/navigation-menu";
 @import "./components/logo";
-@import "./components/contacts";
+@import "./components/contact-list";
 @import "./components/portfolio-filter";
 
 @import "./layout/header";
 @import "./layout/portfolio-projects";
 @import "./layout/footer";
-@import "./layout/footer-info";
+@import "./layout/footer-address";
 @import "./layout/footer-social";
 @import "./layout/footer-newsletter";

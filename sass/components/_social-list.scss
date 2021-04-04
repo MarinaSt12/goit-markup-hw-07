@@ -9,12 +9,12 @@
   margin-top: 16px;
 }
 
-.social-list > a {
-  width: 100%;
-  height: 100%;
-}
+// .social-list > a {
+//   width: 100%;
+//   height: 100%;
+// }
 
-.social-list-link {
+.social-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,15 +33,15 @@
     }
 }
 
-.social-list-icon {
+.social-list__icon {
   fill: #afb1b8;
 
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: var(--timimg-function);
 
-    .social-list-link:hover &,
-    .social-list-link:focus & {
+    .social-list__link:hover &,
+    .social-list__link:focus & {
       fill: var(--text-color-white);
     }
 }
