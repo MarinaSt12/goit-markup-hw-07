@@ -190,10 +190,10 @@ button {
   color: var(--accent-color);
 }
 
-.menu__link.current {
+.menu__link--current {
   color: var(--accent-color);
 }
-.menu__link.current::after {
+.menu__link--current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -436,7 +436,7 @@ button {
   border-color: var(--accent-color);
 }
 
-.modal-form-check-desc {
+.modal-form__check-desc {
   display: flex;
   align-items: center;
   align-self: center;
@@ -447,7 +447,7 @@ button {
   letter-spacing: 0.03em;
   color: var(--text-color-grey);
 }
-.modal-form-check-desc::before {
+.modal-form__check-desc::before {
   display: block;
   content: "";
   width: 16px;
@@ -458,7 +458,7 @@ button {
   margin-right: 8px;
   transition: background-color 250ms var(--timimg-function);
 }
-.modal-form__term:checked + .modal-form-check-desc::before {
+.modal-form__term:checked + .modal-form__check-desc::before {
   background-image: url("../images/check-vector.svg");
   background-position: center;
   fill: var(--text-color-white);
@@ -467,7 +467,7 @@ button {
   background-size: 100%;
   border: none;
 }
-.modal-form__term:focus + .modal-form-check-desc::before {
+.modal-form__term:focus + .modal-form__check-desc::before {
   box-shadow: 0 0 0 1px var(--accent-color);
   border: none;
 }
